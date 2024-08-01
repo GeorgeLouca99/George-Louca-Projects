@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Base Apparel coming soon page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; position: relative; top: 1000px;}
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    .body-bg {
+    width: 1451px;
+    height: 800px;
+    background-image: url('images/bg-pattern-desktop.svg');
+    position: relative;
+    top: -10px;
+    background-color: linear-gradient(white);
+
+}
+/* end of body background */
+
+/* start of hero image */
+.hero-pic {
+    width: 610px;
+    height: 800px;
+    position: relative;
+    top: -340px;
+    left: 830px;
+}
+
+.info {
+    position: relative;
+    top: 234px;
+    left: 165px;
+    width: 445px;
+    height: 308px;
+}
+
+.info span {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 64px;
+    line-height: 64px;
+    letter-spacing: 17.32px;
+    text-transform: uppercase;
+    color: #ce9898;
+}
+
+.info span2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 64px;
+    line-height: 71px;
+    letter-spacing: 17.32px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: #423A3A;
+}
+
+.info p {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    color: #ce9898;
+}
+
+.logo {
+    background-image: no-repeat;
+    position: relative;
+    top: 64.91px;
+    left: 165px;
+    width: 158px;
+    height: 33px;
+}
+
+
+/* start of email validation css */
+.input-container {
+    position: relative;
+    top: 20px;
+    margin-bottom: 20px;
+    width: 445px;
+    height: 56px;
+}
+
+.input-container input {
+    padding: 10px;
+    border: 2px solid #ce9898;
+    border-radius: 100px;
+    font-size: 16px;
+    width: 400px;
+    height: 40px;
+    padding-left: 2rem;
+}
+
+.input-container .error-icon {
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    display: none;
+    color: red;
+}
+
+.input-container .error-icon img {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    right: 80px;
+    top: -10px;
+}
+
+.input-container .error-message {
+    color: red;
+    margin-top: 5px;
+}
+
+.btn {
+    background-color: #ce9898;
+    width: 100px;
+    height: 65px;
+    border-radius: 100px;
+    position: absolute;
+    top: 0px;
+    left: 345px;
+    border: 2px solid #ce9898;
+    filter: drop-shadow(0px 7px 10px #ce9898);
+}
+
+/* end of email validation */
+
+h1 {
+    color: black;
+    position: relative;
+    text-align: center;
+    top: 300px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: bold;
+    font-size: 80px;
+}
+
+/* mobile version */
+@media (max-width: 768px) {
+    .body-bg {
+      background-image: url('images/bg-pattern-mobile.svg');
+      top: 0;
+      height: 100vh;
+    }
+  
+    .hero-pic {
+      top: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 376px;
+      height: 250px;
+      position: relative;
+    }
+  
+    .info {
+      top: 500px;
+      left: 0;
+      text-align: center;
+    }
+  
+    .info span {
+      font-size: 24px;
+      line-height: 24px;
+      letter-spacing: 6.4px;
+    }
+  
+    .info span2 {
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: 6.4px;
+    }
+  
+    .info p {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  
+    .logo {
+      top: 10px;
+      left: 0;
+      width: 80px;
+      height: 17px;
+    }
+  
+    .input-container {
+      top: 20px;
+      margin-bottom: 20px;
+      width: 100%;
+      height: auto;
+    }
+  
+    .input-container input {
+      font-size: 12px;
+      width: 100%;
+      height: 30px;
+    }
+  
+    .input-container .error-icon img {
+      height: 15px;
+      width: 15px;
+    }
+  
+    .btn {
+      width: 80px;
+      height: 30px;
+      top: 20px;
+    }
+  
+    h1 {
+      top: 150px;
+      font-size: 32px;
+    }
+  }
+  </style>
+</head>
+<body>
+
+  <div class="bg">
+    <div class="body-bg">
+      <div class="logo"><img src="images/logo.svg"></div>
+      <div class="info">
+
+        <span>We're</span> <br>
+        <span2>coming <br>soon</span2>
+      
+
+        <p>Hello fellow shoppers! We're currently building our new<br> fashion store. 
+        Add your email below to stay up-to-date with<br> announcements and our launch deals.
+        </p>
+
+        <div class="input-container">
+          <input type="text" id="emailInput" placeholder="Email Address">
+          <span class="error-icon">
+            <img src="images/icon-error.svg" alt="Error Icon">
+          </span>
+          <div id="emailErrorMessage" class="error-message"></div>
+          <button class="btn" onclick="validateEmail()"><img src="images/icon-arrow.svg"></button>
+        </div>
+          
+        
+      </div>
+      <div class="hero-pic">
+        <img src="images\hero-desktop.jpg">
+      </div>
+  </div>
+
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
+  <script>
+    function validateEmail() {
+        const emailInput = document.getElementById('emailInput');
+        const emailErrorMessage = document.getElementById('emailErrorMessage');
+        const errorIcon = document.querySelector('.error-icon');
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        const email = emailInput.value;
+
+        if (emailRegex.test(email)) {
+            emailInput.style.borderColor = '';
+            emailErrorMessage.textContent = '';
+            errorIcon.style.display = 'none';
+            window.location.href = 'thankyou-page.html';
+        } else {
+            emailInput.style.borderColor = 'red';
+            emailErrorMessage.textContent = 'Please enter a valid email address';
+            errorIcon.style.display = 'inline';
+        }
+    }
+  </script>
+</body>
+</html>
